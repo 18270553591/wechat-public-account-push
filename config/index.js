@@ -21,41 +21,42 @@ export const config = {
    * 接收公众号消息的微信号，如果有多个，需要在[]里用英文逗号间隔
    */
   USERS: [
-    // {
-    //   // 想要发送的人的名字
-    //   name: "大宝贝",
-    //   // 扫码关注你的微信测试号后生成的一段字符串，在测试号后台能看到
-    //   id: "oKy2O533W8EPYEFBFXvOY2q2x6uY",
-    //   // 你想对他发送的模板消息的模板ID
-    //   useTemplateId: "aDtuPQkKW_Nwcwe8QjhdI0vOKPvZQDjtF-pJUGNSKEc",
-    //   // 所在省份
-    //   province: "河南",
-    //   // 所在城市
-    //   city: "南阳",
-    //   // 新历生日, 仅用作获取星座运势, 格式必须
-    //   horoscopeDate: '10-14',
-    //   // 获取什么时候的星座运势，可选：['今日', '明日', '本周', '本月', '今年'], 留空则随机
-    //   horoscopeDateType: '今日',
-    //   // 他点击详情后跳转的页面,你可以设置成微博的热榜，也可以设置成其他，网址一定要填对；不填对也没关系，随便你，会打不开而已。
-    //   openUrl: "http://www.zjnu.edu.cn",
-    //   // 专属节日提醒，如果你在这里填写了节日提醒，就不会执行FESTIVALS的提醒了, 和FESTIVALS的配置方法相同，可以往下查看，我这里就不重复写了
-    //   festivals: [
-    //     // 注意：此条配置日期为阴历日期，因为`type`中 “生日” 之前有 * 符号
-    //     {"type": "*生日", "name": "大宝贝", "year": "2000", "date": "09-17"},
-    //     {"type": "*生日", "name": "狗子", "year": "2000", "date": "12-08"}
-    //     // 注意：此条配置日期为阳历日期，因为`type`中 “生日” 之前没有 * 符号
-    //     // {"type": "节日", "name": "考研日", "year": "2018", "date": "12-24"},
-    //   ],
-    //   // 专属纪念日/倒数日，如果你在这里填写了纪念日/倒数日，就不会计算CUSTOMIZED_DATE_LIST的日子了, 和CUSTOMIZED_DATE_LIST的配置方法相同，可以往下查看，我这里就不重复写了
-    //   customizedDateList: [
-    //     // 在一起的日子
-    //     {"keyword": "love_day", date: "2018-12-24"},
-    //     // 结婚纪念日
-    //     //{"keyword": "marry_day", date: "2022-09-09"},
-    //     // 退伍日
-    //     //{"keyword": "ex_day", date: "2022-09-10"},
-    //   ]
-    // },
+    {
+      // 想要发送的人的名字
+      name: "大宝贝",
+      // 扫码关注你的微信测试号后生成的一段字符串，在测试号后台能看到
+      id: "oKy2O533W8EPYEFBFXvOY2q2x6uY",
+      // 你想对他发送的模板消息的模板ID
+      useTemplateId: "k6v6svMRBtSPxpYRmd3-gddJNgVYH4yY-AUfO9Se0kY",
+      // 所在省份
+      province: "河南",
+      // 所在城市
+      city: "南阳",
+      // 新历生日, 仅用作获取星座运势, 格式必须
+      horoscopeDate: '10-14',
+      // 获取什么时候的星座运势，可选：['今日', '明日', '本周', '本月', '今年'], 留空则随机
+      horoscopeDateType: '今日',
+      // 他点击详情后跳转的页面,你可以设置成微博的热榜，也可以设置成其他，网址一定要填对；不填对也没关系，随便你，会打不开而已。
+      openUrl: "http://www.zjnu.edu.cn",
+      // 专属节日提醒，如果你在这里填写了节日提醒，就不会执行FESTIVALS的提醒了, 和FESTIVALS的配置方法相同，可以往下查看，我这里就不重复写了
+      festivals: [
+        // 注意：此条配置日期为阴历日期，因为`type`中 “生日” 之前有 * 符号
+        {"type": "*生日", "name": "大宝贝", "year": "2000", "date": "09-17"},
+        {"type": "*生日", "name": "狗子", "year": "2000", "date": "12-08"}
+        // 注意：此条配置日期为阳历日期，因为`type`中 “生日” 之前没有 * 符号
+        // {"type": "节日", "name": "考研日", "year": "2018", "date": "12-24"},
+      ],
+      // 专属纪念日/倒数日，如果你在这里填写了纪念日/倒数日，就不会计算CUSTOMIZED_DATE_LIST的日子了, 和CUSTOMIZED_DATE_LIST的配置方法相同，可以往下查看，我这里就不重复写了
+      customizedDateList: [
+        // 在一起的日子
+        {"keyword": "love_day", date: "2018-12-24"},
+        {"keyword": "menses_day", date: "2022-08-11"},
+        // 结婚纪念日
+        //{"keyword": "marry_day", date: "2022-09-09"},
+        // 退伍日
+        //{"keyword": "ex_day", date: "2022-09-10"},
+      ]
+    },
     {
       // 想要发送的人的名字
       name: "自己",
@@ -63,7 +64,7 @@ export const config = {
       id: "oKy2O50RGSMAUectFR9q2MvLRL-Y",
       // 你想对他发送的模板消息的模板ID
       // useTemplateId: "aDtuPQkKW_Nwcwe8QjhdI0vOKPvZQDjtF-pJUGNSKEc",
-      useTemplateId: "k6v6svMRBtSPxpYRmd3-gddJNgVYH4yY-AUfO9Se0kY	",
+      useTemplateId: "k6v6svMRBtSPxpYRmd3-gddJNgVYH4yY-AUfO9Se0kY",
       // 所在省份
       province: "河南",
       // 所在城市
