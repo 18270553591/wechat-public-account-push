@@ -17,6 +17,8 @@ import { selfDayjs, timeZone } from '../utils/set-def-dayjs.js'
 
 axios.defaults.timeout = 10000
 
+const MENSES_DAYS = 26;
+
 /**
  * 获取 accessToken
  * @returns accessToken
@@ -598,7 +600,12 @@ export const getAggregatedData = async () => {
 
     // 统计日列表计算日期差
     const dateDiffParams = getDateDiffList(user.customizedDateList).map(item => {
-      return { name: item.keyword, value: item.diffDay, color: getColor() }
+      if(item.keyword === 'menses_day') {
+        var mensesDiffDay = item.diffDay % MENSES_DAYS;
+        return { name: item.keyword, value: mensesDiffDay, color: getColor() }
+      } else {
+        return { name: item.keyword, value: item.diffDay, color: getColor() }
+      }
     })
 
     // 获取生日/生日信息

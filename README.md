@@ -112,6 +112,14 @@ wechat-public-account-push 实现自消息推送的原理，是通过调用一�
 
 - 登录成功后, 就可以生成微信公众测试号的appID和appsecret这两串数字, 记下备用
 
+- appID
+
+  wx216c01cbef8cc954
+
+  appsecret
+
+  b1070543b6595a1a5a690f9ad228bf59
+
 ![图片无法查看请移步顶部访问 国内备用仓库地址](img/wx-test-id.png)
 
 - 扫描测试号二维码关注测试号, 扫描之后, 右边就会出现相应的已关注人员id, 记下备用
